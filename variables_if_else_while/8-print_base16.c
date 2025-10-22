@@ -1,15 +1,21 @@
 #include <stdio.h>
 
 /**
- * main - imprime les chiffres de 0 à 9 sans utiliser de char
+ * main - imprime les nombres en hexadécimal
  *
- * Return: 0 (succès)
+ * Return: Toujours 0 (Succès)
  */
 int main(void)
 {
 int i;
-for (i < 10; i++)
-putchar(i + 16);
+for (i = 0; i < 10; i++)
+{
+putchar(i + '0');
+}
+for (i = 10; i < 16; i++)
+{
+putchar(i - 10 + 'a');
+}
 putchar('\n');
 return (0);
 }
