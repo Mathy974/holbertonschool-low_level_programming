@@ -1,4 +1,4 @@
-#include <stdio.h>
+i#include <stdio.h>
 #include <unistd.h>
 #include "main.h"
 
@@ -7,14 +7,12 @@
  *
  * Return: Always 0 (Success)
  */
-print_alphabet(void);
+void print_alphabet(void)
 {
-	char c = 'a';
+    char ch;
 
-	while (c <= 'z')
-	{
-		_putchar(c);
-		c++;
-	}
-	_putchar('\n');
+    for (ch = 'a'; ch <= 'z'; ch++)
+        _putchar(ch);
+
+    _putchar('\n');
 }
