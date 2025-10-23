@@ -5,7 +5,7 @@
  *
  * Return: Always 0 (Success)
  */
-int main.h
+int main(main.h)
 {
 printf("_putchar\n")
 return(0)
